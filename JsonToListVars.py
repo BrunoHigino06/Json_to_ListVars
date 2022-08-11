@@ -41,11 +41,14 @@ jsonfile = """{
     ]
 }"""
 
-print(jsonfile)
 
 database = json.loads(jsonfile)
 
-print(database)
+x = 'Account : ' 
+y = 1
 
-for arn in database['Accounts']:
-    print(arn['Id'])
+for accountid in database['Accounts']:
+        print (x, y)
+        print(accountid['Id'])
+        y = y + 1
+    
